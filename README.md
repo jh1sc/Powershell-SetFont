@@ -14,3 +14,6 @@ First of all in this module, there are 4 Functions.
 - **SetFont**: Again Self explanatory, just sets your font of choice from ListSavedFont, to use it do, SetFont {Save Name For Font}
 
 - **RemoveSavedFont**: Removes a font from your save list, example to use it would be, RemoveSavedFont {Save Name For Font}
+## Examples ⚡
+-Powershell
+(``)
