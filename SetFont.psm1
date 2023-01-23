@@ -227,6 +227,44 @@ Function SetFont
     }
 }
 
+Function SetFontAsp
+{
+    param
+    (
+        [Parameter(Mandatory=$true, Position=0)]
+        $FontIndex,
+        [Parameter(Mandatory=$true, Position=0)]
+        $FontWidth,
+        [Parameter(Mandatory=$true, Position=0)]
+        $FontHeight,
+        [Parameter(Mandatory=$true, Position=0)]
+        $FontFamily,
+        [Parameter(Mandatory=$true, Position=0)]
+        $FontWeight,
+        [Parameter(Mandatory=$true, Position=0)]
+        $FaceName
+    )
+    try
+            {
+                $FontAspects = [Windows.Native.Kernel32]::GetCurrentConsoleFontEx()
+                $FontAspects.FontIndex = $FontIndex
+                $FontAspects.FontWidth = $FontWidth
+                $FontAspects.FontHeight = $FontHeight
+                $FontAspects.FontFamily = $FontFamily
+                $FontAspects.FontWeight = $FontWeight
+                $FontAspects.FaceName = $FaceName
+                [Windows.Native.Kernel32]::SetCurrentConsoleFontEx($FontAspects)
+            }
+    catch
+    {
+        Write-Error "An error occurred while setting the font: $($_.Exception.Message)"
+    }
+}
+
+
+
+
+
 Function RemoveSavedFont 
 {
     param
