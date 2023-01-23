@@ -11,8 +11,7 @@ First of all in this module, there are 4 Functions.
 
 - **SetFont**: Again Self explanatory, just sets your font of choice from ListSavedFont, to use it do, SetFont {Save Name For Font}
 
-- **SetFontAsp**: Sets the font with specifics instead of saving then setting the font, use it with these params 
-- SetFontAsp {FontIndex} {FontWidth} {FontHeight} {FontFamily} {FontWeight} {FaceName}
+- **SetFontAsp**: Sets the font with specifics instead of saving then setting the font, use it with these params, SetFontAsp {FontIndex} {FontWidth} {FontHeight} {FontFamily} {FontWeight} {FaceName}
 
 - **ListSavedFont**: No Params, Just lists all your saved fonts.
 
