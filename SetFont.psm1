@@ -233,15 +233,15 @@ Function SetFontAsp
     (
         [Parameter(Mandatory=$true, Position=0)]
         $FontIndex,
-        [Parameter(Mandatory=$true, Position=0)]
+        [Parameter(Mandatory=$true, Position=1)]
         $FontWidth,
-        [Parameter(Mandatory=$true, Position=0)]
+        [Parameter(Mandatory=$true, Position=2)]
         $FontHeight,
-        [Parameter(Mandatory=$true, Position=0)]
+        [Parameter(Mandatory=$true, Position=3)]
         $FontFamily,
-        [Parameter(Mandatory=$true, Position=0)]
+        [Parameter(Mandatory=$true, Position=4)]
         $FontWeight,
-        [Parameter(Mandatory=$true, Position=0)]
+        [Parameter(Mandatory=$true, Position=5)]
         $FaceName
     )
     try
